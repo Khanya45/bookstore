@@ -1,12 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .main {
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(65, 57, 57);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(65, 57, 57);
+}
+
+.carts_card {
+  align-items: stretch;
+  font-size: 0;
+  border-bottom: 1px solid silver;
+  padding: 20px 0;
+  justify-content: flex-start;
+  display: flex;
+  width: 100%;
+}
