@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+.book_cart {
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  flex-direction: column;
+  width: 60%;
+}
+
+.carts_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main {
   height: 100px;
   display: flex;
@@ -19,4 +33,22 @@
   justify-content: flex-start;
   display: flex;
   width: 100%;
+  flex-direction: row;
+}
+
+.book_img img {
+  width: 150px;
+  height: 200px;
+}
+
+.cart_details p {
+  color: black;
+}
+
+.cart_btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  height: 50px;
 }

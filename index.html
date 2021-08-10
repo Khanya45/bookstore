@@ -5,18 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habituate Bookstore</title>
+    <script
+      src="https://kit.fontawesome.com/cce18f0ce0.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="/styling.css" />
+    <link rel="stylesheet" href="/navbar.css" />
   </head>
   <body>
     <div class="main">
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <a href="/index.html" class="navbar-anchor">HOME</a>
+        </li>
+        <li class="navbar-link">
+          <a href="/sign_in.html" class="navbar-anchor">LOG IN</a>
+        </li>
+        <li class="navbar-link">
+          <a href="" class="navbar-anchor">SIGN UP</a>
+        </li>
+        <li class="navbar-link">
+          <a href="/html/services.html" class="navbar-anchor"></a>
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
+
       <h1>WELCOME TO HABITUATE READING BOOKSTORE</h1>
+      <div class="search_items">
+        <input
+          type="text"
+          class="form-control"
+          id="filter"
+          placeholder="Search Books..."
+        />
+      </div>
       <div class="btn">
-        <button>SIGN UP</button>
-        <button>LOG IN</button>
+        <img src="/SGN_02_12_2021_1613097851778.png" />
       </div>
     </div>
     <div class="section">
-      <div class="books_container"></div>
+      <div class="order_details">
+        <div class="table_order">
+          <div class="details">
+            <h2>Customer name & Order ID</h2>
+            <i class="fas fa-plus-circle"></i>
+          </div>
+
+          <table>
+            <tr>
+              <th>Book Title</th>
+              <th>Price</th>
+              <th>Quantity</th>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+            <tr>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+              <td contenteditable="true"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="cost_details">
+          <div id="st">
+            <h4>Subtotal:<span>R0.00</span></h4>
+            <h4>Discount:<span> R0.00</span></h4>
+            <h4>Tax:<span> R0.00</span></h4>
+          </div>
+          <div id="nd">
+            <h4>Total: <span> R0.00</span></h4>
+            <h4>Balance Due:<span> R0.00</span></h4>
+          </div>
+        </div>
+        <div class="order_btn">
+          <button>Cancel Order</button>
+          <button>Send Order</button>
+        </div>
+        <hr />
+        <div class="btn_functions">
+          <button>CUSTOMER TABLE</button>
+          <button>BOOKS TABLE</button>
+          <button>ORDER TABLE</button>
+        </div>
+      </div>
+      <div class="books_container">
+        <!-- <div class="button-container">
+          <button onclick="filterCards('All')">All</button>
+          <button onclick="filterCards('non-fiction')">non-fiction</button>
+          <button onclick="filterCards('fiction')">fiction</button>
+        </div> -->
+      </div>
     </div>
     <script src="/dynamic.js"></script>
   </body>

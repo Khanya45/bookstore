@@ -88,7 +88,41 @@ function getBooks() {
       </div>
       <div class="cart_btns">
         <button>DELETE</button>
-      </div>
+      </div>carts
     </div>`;
     });
+}
+
+
+function filterBooks(category) {
+  fetch(
+    "https://google-books.p.rapidapi.com/volumes?key=AIzaSyAOsteuaW5ifVvA_RkLXh0mYs6GLAD6ykc",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-key": "643dea22c1msh2196402f710b469p1df2fejsn33c91fd47995",
+        "x-rapidapi-host": "google-books.p.rapidapi.com",
+      },
+    }
+  )
+  .then((res) => res.json())
+  .then((data) => {
+      books = response.items;
+  let books = document.getElementsByClassName("card");
+  if (category == "All") {
+    for (book of books) {
+      card.style.display = "block";
+    }
+    return;
+  }
+  for (book of books) {
+    card.style.display = "none";
+  }
+
+  let selectedCards = document.querySelectorAll(`${book.volumeInfo.imageLinks["thumbnail"]}=${category}`);
+
+  for (book of selectedCards) {
+    book.style.display = "block";
+  }
+})
 }
